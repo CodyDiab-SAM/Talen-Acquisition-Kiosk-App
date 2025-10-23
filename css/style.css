@@ -1,0 +1,759 @@
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('C/fonts/Rubik-VariableFont_wght.ttf') format("ttf"),
+        url('/fonts/Rubik-Italic-VariableFont_wght.ttf') format("ttf");
+    font-display: swap;
+    font-style: normal;
+}
+body{
+    font-weight: 400;
+    font-family: 'Rubik' , system-ui;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+p{
+    color: #212322;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.container{
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6{
+    color: #003057;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+h1{
+    font-size: 48px;
+    margin-bottom: 55px;
+}
+h2{
+    font-size: 36px;
+}
+h3{
+    font-size: 28px;
+}
+h4{
+    font-size: 24px;
+}
+h5{
+    font-size: 20px;
+}
+h6{
+    font-size: 18px;
+}
+
+.content-row span, .modal-title{
+text-transform: uppercase ;
+}
+.mb-0{
+    margin-bottom: 0px;
+}
+.btn{
+    padding: 18px 40px;
+    font-size: 14px;
+    border-radius: 5px;
+    line-height: 1;
+}
+.btn-primary{
+    background-color: #ED8B00;
+    border-color: #ED8B00;
+}
+.btn-primary:hover{
+    background-color: #ED8B00;
+    border-color: #ED8B00;
+}
+.btn-secondary{
+    background-color: #ffffff;
+    color: #003057;
+    border: none;
+}
+.btn-secondary:hover{
+    background-color: #003057;
+    border-color: #003057;
+}
+.green-color{
+    color: #5C7F71;
+}
+header.header {
+    padding: 21px 0;
+    position: relative;
+}
+header .site-branding{max-width:35%;}
+
+.banner-section .banner-inner{
+    padding: 110px 0 0 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.banner-section .banner-inner .right-col img{
+    position: absolute;
+    bottom: 0;
+}
+.banner-section .banner-inner .right-col{
+    justify-content: end;
+}
+.banner-section .banner-inner .left-col {
+    padding-bottom: 90px;
+}
+.banner-section .banner-inner h1{
+    color: #ffffff;
+}
+.banner-section .banner-inner .left-col p{
+    color: #ffffff;
+}
+.banner-section .banner-inner .left-col ul{
+    list-style: none;
+    padding: 0 0 0 90px;
+    margin-bottom: 75px;
+}
+.banner-section .banner-inner .left-col ul li,
+.banner-section .banner-inner .left-col ul li a{
+    color: #ffffff;
+    font-size: 24px;
+}
+.banner-section .banner-inner .left-col .banner-btn a{
+    color: #ffffff;
+    font-size: 24px;
+    transition: all .3s ease;
+}
+.banner-section .banner-inner .left-col .banner-btn a:hover{
+    text-decoration: underline;
+    opacity: 0.8;
+}
+.banner-section .banner-inner iframe {
+    width: 100%;
+    height: 828px;
+}
+.banner-section .banner-inner.vider-block{
+    padding: 0;
+}
+.video-wrap{
+    background: url("../images/TOUCHSCREEN-BACKGROUND.png");
+    padding:3rem;
+  border-bottom:3rem solid #ED8B00;
+  background-position:center;
+  background-size: cover;
+}
+
+.video-sec{
+    position:relative;
+
+}
+.pdf-container{
+    max-width: 80%;
+    margin: auto;
+}
+.playpuse{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: url("../images/play-button.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+    border: none;
+    outline: none;
+}
+.pause-video{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: url("../images/pause-button.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+    border: none;
+    outline: none;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+.custom-video:hover .pause-video{
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+.banner-section button.slick-prev {
+    display: block;
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    left: 10px;
+    z-index: 3;
+    background-image: url('../images/previous-arrow.png');
+    font-size: 0;
+    border-radius: 100%;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner-section button.slick-next {
+    display: block;
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    right: 10px;
+    z-index: 3;
+    background-image: url('../images/next-arrow.png');
+    font-size: 0;
+    border-radius: 100%;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.services-section{
+    margin-top: 25px;
+}
+.services-section .modal{
+    background-color: rgba(255, 255, 255, 1);
+}
+.services-section .modal .modal-title{
+    font-size: 38px;
+    line-height: 1.1;
+    text-align: left;
+    color: #003057;
+    margin-bottom: 0px;
+    
+}
+ .modal-body{
+   padding:0rem;
+}
+.pdf{
+    padding-top:3em;
+    padding-bottom:3em;
+    background-image: url('../images/TOUCHSCREEN-BACKGROUNDS-BROCHURES.png');
+    background-attachment: fixed;
+}
+.services-section .modal .modal-header, .modal-text{
+    padding: 20px 45px 20px 20px;
+}
+.services-section .modal .modal-header{
+    border: none;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+}
+.modal-branding{
+    max-width:10%;
+    padding:40px 0;
+}
+.services-section .modal .modal-footer{
+    justify-content: center;
+    padding: 24px 20px;
+    border: none;
+}
+.services-section .modal .modal-footer .btn {
+    height: 50px;
+    display: inline-block;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 50px;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    white-space: normal;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    border-radius: 4px;
+    position: relative;
+    padding: 0px 30px;
+    text-transform: uppercase;
+    background: #003057;
+    box-shadow: none;
+}
+
+.services-section .modal .modal-footer .btn:hover, 
+.services-section .modal .modal-footer .btn:focus {
+    background: #003057;
+    box-shadow: none;
+}
+.services-section .inner-block .row {
+    margin-left: -30px;
+    margin-right: -30px;
+}
+.services-section .inner-block .col-block {
+    padding: 0 30px;
+}
+.services-section .inner-block .box-col{
+    /* box-shadow: 0px 7px 7px 4px rgb(0, 0, 0, 0.1); */
+    box-shadow: 0px 12px 9px rgb(102 102 102 / 35%);
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    background-color: #fff;
+}
+.services-section .inner-block .box-col:hover{
+    background: #003057;
+    border: 1px solid #003057;
+    box-shadow: none;
+}
+.services-section .inner-block .box-col span{
+    color: #666666;
+    font-size: 20px;
+    line-height: 24px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.services-section .inner-block .box-col:hover span{
+    color: #ffffff;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.services-section .inner-block .box-col .img-row{
+    margin-bottom: 5px;
+}
+.services-section .inner-block .box-col .img-row img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.services-section .inner-block .box-col .img-row a {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+    overflow: hidden;
+}
+.banner-section .banner-inner .video{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.banner-section  {
+    /* background-image:url(../images/slider-bg.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+.banner-inner{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.services-section .inner-block video{
+    width:100%;
+    height:auto;
+}
+.services-section .inner-block .modal p{
+    margin-bottom: 20px;
+}
+.services-section .inner-block .modal p,
+.services-section .inner-block .modal ul li{
+    text-align: left;
+    font-size: 21px;
+    line-height: 25px;
+    font-weight: 400;
+}
+.services-section .inner-block .modal .modal-content .content{
+    margin-top: 20px;
+}
+.services-section .inner-block .modal .modal-content.clean-energy .service-imge-text .icon-col{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.services-section .inner-block .modal .modal-content.clean-energy .service-imge-text .icon-col .img-row{
+    max-width: 50px;
+}
+.services-section .inner-block .modal .modal-content.clean-energy .service-imge-text .icon-col .content-row{
+    width: calc(100% - 80px);
+    text-align: left;
+    margin-left: 20px;
+    line-height: 18px;
+}
+.services-section .inner-block .modal .modal-content.clean-energy .service-imge-text .row{
+    margin: 0px;
+    justify-content: center;
+}
+.services-section .inner-block .modal .modal-content.clean-energy .service-imge-text .icon-col .content-row span{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    color: #006c68;
+}
+.services-section .inner-block .modal .modal-content .content h4,
+.services-section .inner-block .modal .modal-content .content h6{
+    text-align: left;
+    font-weight: bold;
+}
+.services-section .inner-block .modal .modal-content .content ol, 
+.services-section .inner-block .modal .modal-content .content ul {
+    padding-left: 18px;
+}
+.services-section .inner-block .modal .modal-content.utility-industry .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.services-section .inner-block .modal .modal-content,
+.services-section .inner-block .modal .modal-dialog{
+    position: relative;
+    max-width: 100%;
+    margin:0;
+}
+.services-section .inner-block .btn-close{
+    top: 15px;
+    position: absolute;
+    right: 15px;
+    box-shadow: 0px 7px 7px 4px rgb(0 0 0 / 20%);
+    background-color: #fff;
+    opacity: 1;
+    padding: 10px;
+}
+@media screen and (min-width: 1471px){
+    .banner-section .banner-inner .video{
+        height: 827px;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 1470px){
+    .banner-section .banner-inner{
+        padding: 75px 0 0 0;
+    }
+    .banner-section .banner-inner .left-col{
+        padding-bottom: 58px;
+    }
+    h1{
+        margin-bottom: 51px;
+    }
+}
+@media screen and (max-width: 1367px){
+    .banner-section .banner-inner{
+        padding: 80px 0 0 0;
+    }
+    .banner-section .banner-inner .left-col{
+        padding-bottom: 62px;
+    }
+    h1{
+        margin-bottom: 51px;
+    }
+    p{
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .banner-section .banner-inner .left-col ul li,
+    .banner-section .banner-inner .left-col ul li a{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 1280px){
+    .banner-section .banner-inner {
+        padding: 60px 0 0 0;
+    }
+    h1{
+        margin-bottom: 26px;
+    }
+    p{
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .banner-section .banner-inner .left-col ul li,
+    .banner-section .banner-inner .left-col ul li a{
+        font-size: 22px;
+    }
+}
+@media (min-width: 1181px) and (max-width: 1195px){
+    .banner-section .banner-inner .left-col ul{
+        margin-bottom: 45px;
+    }
+    p{
+        margin-bottom: 22px;
+    }
+}
+@media screen and (max-width: 1180px){
+    p{
+        margin-bottom: 34px;
+    }
+    .banner-section .banner-inner .left-col ul{
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1179px){
+    .banner-section .banner-inner .video{
+        height: 720px;
+        object-fit: cover;
+    }
+    .banner-section .banner-inner .left-col{
+        padding-left:60px;
+    }
+    .banner-section .banner-inner h1{
+        padding-left: 44px;
+    }
+}
+
+@media (min-width: 1009px) and (max-width: 1180px){
+    .banner-section .banner-inner .video{
+        height: 633.6px;
+        object-fit: cover;
+    }
+    header .site-branding {
+        max-width: 25%;
+    }
+    h1 {
+        margin-bottom: 23px;
+    }
+}
+@media (min-width: 1079px) and (max-width: 1081px){
+    h1 {
+        margin-bottom: 23px;
+    }
+}
+@media (max-width: 1024px){
+    .banner-section .banner-inner .left-col{
+        padding-left:60px;
+    }
+    .banner-section .banner-inner h1{
+        padding-left: 44px;
+    }
+    h1 {
+        margin-bottom: 23px;
+    }
+    .services-section .modal .modal-title {
+        font-size: 36px;
+    }
+}
+@media (max-width: 992px){
+    h1{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 12px;
+    }
+    .banner-section .banner-inner .left-col .banner-btn a,
+    .banner-section .banner-inner .left-col ul li,
+    .banner-section .banner-inner .left-col ul li a{
+        font-size: 16px;
+    }
+    .banner-section .banner-inner .left-col{
+        padding-left:60px;
+    }
+     .banner-section .banner-inner h1{
+        padding-left: 44px;
+    }
+    .banner-section .banner-inner .right-col img{
+        max-width: 320px;
+    }
+    header .site-branding img{
+        max-width: 25%;
+    }
+    .services-section .inner-block .row{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .services-section .inner-block .col-block{
+        padding: 0 15px;
+    }
+    .services-section .inner-block .modal p,
+    .services-section .inner-block .modal ul li{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .services-section .inner-block .modal .modal-content.clean-energy .service-imge-text .icon-col .content-row span{
+        font-size: 15px;
+    }
+}
+@media (min-width: 819px) and (max-width: 835px){
+    .banner-section .banner-inner .left-col {
+        padding-bottom: 51px;
+    }
+}
+@media (max-width: 820px){
+    .banner-section .banner-inner .left-col ul{
+        margin-bottom: 35px;
+    }
+    .banner-section .banner-inner .left-col {
+        padding-bottom: 38px;
+    }
+}
+@media (min-width: 808px) and (max-width: 812px){
+    .banner-section .banner-inner{
+        padding: 57px 0 0 0;
+    }
+}
+@media (max-width: 768px){
+    .banner-section .banner-inner .left-col ul{
+        margin-bottom: 16px;
+    }
+    .banner-section .banner-inner .left-col {
+        padding-bottom: 30px;
+    }
+}
+@media (max-width: 767px){
+    .services-section .inner-block .row{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .services-section .inner-block .col-block{
+        padding: 0;
+    }
+    .header .col{
+        width: 50%;
+    }
+    h1{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    h2,h3,h4{
+        font-size: 16px;
+    }
+    p{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .banner-section .banner-inner .left-col .banner-btn a{
+        font-size: 14px;
+    }
+    .banner-section .banner-inner .right-col img{
+        max-width: 180;
+    }
+    .banner-section .banner-inner{
+        text-align: center;
+        padding: 24px 0 0 0;
+    }
+    .banner-section .banner-inner .left-col{
+        padding-left:0px;
+        padding-right: 0px;
+        padding-bottom: 12px;
+    }
+    .banner-section .banner-inner h1{
+        padding-left: 0px;
+        margin-bottom: 12px;
+    }
+    .banner-section .banner-inner .left-col ul{
+        padding: 0;
+        margin-bottom: 5px;
+    }
+    .banner-section .banner-inner .left-col ul li,
+    .banner-section .banner-inner .left-col ul li a{
+        color: #ffffff;
+        font-size: 14px;
+    }
+    .banner-section .banner-inner .right-col {
+        justify-content: center;
+    }
+    .banner-section button.slick-next,
+    .banner-section button.slick-prev{
+        width: 32px;
+        height: 32px;
+    }
+    .banner-section .banner-inner .right-col img{
+        position: relative;
+        max-width: 180px;
+    }
+    .services-section .inner-block .modal .modal-content.clean-energy .service-imge-text .icon-col .img-row {
+        max-width: 40px;
+    }
+    .services-section .inner-block .modal .modal-content.clean-energy .service-imge-text .icon-col .content-row{
+        margin-left: 10px;
+        width: calc(100% - 60px);
+    }
+    .services-section .inner-block .modal .modal-content.clean-energy .service-imge-text .icon-col .content-row span{
+        font-size: 12px;
+    }
+    .services-section .inner-block .modal .modal-content.clean-energy .service-imge-text .row {
+        margin: 0px -15px;
+    }
+    .services-section .modal .modal-title {
+        font-size: 32px;
+    }
+    .services-section .inner-block .modal .modal-content.utility-industry .details-sec .img-box {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .services-section .inner-block .modal .modal-content .content h6{
+        font-size: 16px;
+    }
+    .services-section .inner-block .modal p, .services-section .inner-block .modal ul li{
+        font-size: 14px;
+    }
+    .services-section .modal h4.modal-title {
+        font-size: 26px;
+    }
+}
+
+.modal-content {
+    border: 0px;
+}
+
+progress[value] {
+    appearance: none;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25) inset;
+    color: #004976;
+    display: inline;
+    height: 6px;
+    order: 1;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    padding: 0px 6px;
+  }
+
+  progress[value]::-webkit-progress-bar {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25) inset;
+  }
+
+  progress[value]::-webkit-progress-value {
+    background-image:
+    linear-gradient(to right, #0b1d69, #006c68);
+    border-radius: 3px;
+    position: relative;
+    transition: width 1s linear;
+  }
