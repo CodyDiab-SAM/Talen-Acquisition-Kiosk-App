@@ -1,0 +1,6 @@
+:root{--bg:#0b1633;--accent:#0b5fff;--text:#fff;font-family:Inter,system-ui;}
+body{margin:0;background:linear-gradient(180deg,var(--bg),#07102a);color:var(--text);}
+.site-header{text-align:center;padding:2rem;background:rgba(11,91,255,0.1);}
+main{padding:2rem;max-width:900px;margin:auto;}
+button{background:var(--accent);color:var(--text);border:none;padding:0.6rem 1rem;border-radius:8px;cursor:pointer;}
+footer{text-align:center;padding:1rem;opacity:0.7;}
